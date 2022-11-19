@@ -1,0 +1,168 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*the home page has many features, the header is created to stay at the top of the page and the footer is locked into the bottom of the page
+    the navigation bar is created using ul li, and with display:inline, the list can be displayed on a single line for easy access
+    the left and right bars have almost identical styling, the middle section has been turned into a full image with background-image
+    the links to other pages have been styled to change color when hovered over and clicked on
+    the images on the page have been position with relative position and placed into the left and right sides
+*/
+
+#header {
+    background-color: lightcoral;
+    color: darkblue;
+    font: bold 30px "Times New Roman", times, serif;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    border-bottom: 3px solid black;
+}
+
+#navigation {
+    background-color: darkred;
+    color: gold;
+    padding: 5px;
+    top: 50px;
+}
+
+#navigation ul {
+    list-style: none;
+    text-align: center;
+    top:35px;
+
+}
+
+#navigation li {
+    display: inline;
+    padding-right: 40px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+a:visited {
+    color: darkorange;
+}
+
+#leftside {
+    background-color:lightslategray;
+    color: white;
+    width: 25%;
+    height: 600px;
+    float: left; /*floats element out of page, the content after it moves into the area*/
+}
+
+#main-content {
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 600px;
+    font-family: "Times New Roman", times, serif;
+    text-align: center;
+    font: 40px serif;
+
+    float: left;
+
+    background-image: url(images/programmer.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+#rightside{
+    background-color: lightslategrey;
+    color: white;
+    width: 25%;
+    height: 600px;
+ 
+    float: left;
+}
+
+#footer {
+
+    clear: both; /*to prevent floating on both sides, completely*/
+
+    text-align: center;
+    color: gold;
+    background-color: darkgreen;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    border-top: 2px solid black;
+}
+
+.img-code{
+    position: relative;
+    top:20px;
+}
+
+
+/*coding for the left and right sides
+    the styles are kept the same for both for consistency
+    some variation in style
+*/
+#left-text{
+    color:black;
+}
+
+#left-text p{
+    padding-left:10px;
+    line-height:1.5em;
+}
+
+
+#right-text{
+    color:black;
+}
+
+#right-text p{
+    padding-left:10px;
+}
+
+#left-head, #right-head{
+    text-align: center;
+    background-color: orchid;
+    color: darkblue;
+    font-style: italic;
+    font-size:25px;
+}
+
+h5{
+    text-decoration: underline;
+    font-size: 16px;
+    padding-left: 10px;
+    line-height:1em;
+}
+
+h6 {
+    font-size: 16px;
+    padding-left: 10px;
+    line-height:1.5em;
+}
+
+a.linkedin{
+    color:blue;
+}
+.linkedin:hover{
+    background-color:white;
+    color:black;
+}
+
+/*image positions*/
+.img-compass{
+    position: relative;
+    top: 10%;
+    left:10%;
+}
+
+.img-phone {
+    position: relative;
+    top: 5%;
+    left: 10%;
+}

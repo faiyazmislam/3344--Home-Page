@@ -1,0 +1,93 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*this page has the same styled header and footer
+    the table is split into multiple parts - th (headers), tr(rows), td(data)
+    the width of each column is established with percentages
+*/
+
+#header {
+    background-color: coral;
+    color: aquamarine;
+    font: bold 30px "Times New Roman", times, serif;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+}
+
+body{
+    background-color:black;
+}
+
+table{
+    font-family:'Times New Roman', Times, serif
+}
+
+/*border of the table is created here, border-collapse prevents gaps between the boxes*/
+table, th, td{
+    border:2px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    padding:5px;
+}
+
+th.first-column{
+    width:10%;
+    background-color:darkred;
+    color:white;
+}
+
+td.first-column{
+    text-align:center;
+    background-color: pink;
+}
+
+th.second-column {
+    width: 10%;
+    background-color:darkgoldenrod;
+    color:white;
+}
+td.second-column{
+    text-align:center;
+    background-color:lightgoldenrodyellow;
+}
+
+th.third-column{
+    width:40%;
+    background-color: darkgreen;
+    color:white;
+}
+td.third-column{
+    background-color: lightgreen;
+    padding:3px;
+}
+
+th.last-column{
+    width:15%;
+    background-color: darkblue;
+    color:white;
+}
+
+td.last-column {
+    width: 100px;
+    text-align: center;
+    background-color:lightskyblue;
+}
+
+#footer {
+
+    text-align: center;
+    color: gold;
+    background-color: darkgreen;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    border-top: 2px solid black;
+}
